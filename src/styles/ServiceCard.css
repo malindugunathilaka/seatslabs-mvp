@@ -1,0 +1,124 @@
+/* ============================================
+   SERVICE CARD STYLES - ServiceCard.css
+   ============================================ */
+
+.service-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.service-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.service-duration {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: rgba(26, 86, 219, 0.1);
+  border-radius: var(--radius-full);
+}
+
+.service-description {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.5;
+}
+
+.service-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-light);
+}
+
+.service-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  color: var(--text-lighter);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.select-btn {
+  padding: 10px 24px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.select-btn:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.02);
+}
+
+.select-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .service-card {
+    padding: var(--spacing-md);
+  }
+
+  .service-card-header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .service-card-footer {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: stretch;
+  }
+
+  .service-price {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .select-btn {
+    width: 100%;
+  }
+}
