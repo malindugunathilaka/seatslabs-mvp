@@ -34,7 +34,7 @@ function App() {
 
   // Services data
   const services = [
-    { id: 1, name: 'Oil Change', duration: '30 mins', price: 2500, description: 'Complete oil change with filter replacement' },
+    { id: 1, name: 'Oil Change', duration: '30 mins', price: 20500, description: 'Complete oil change with filter replacement' },
     { id: 2, name: 'Brake Repair', duration: '1 hour', price: 5000, description: 'Brake pad inspection and replacement' },
     { id: 3, name: 'Full Service', duration: '2 hours', price: 8000, description: 'Complete vehicle checkup and maintenance' },
     { id: 4, name: 'Engine Diagnostics', duration: '45 mins', price: 3500, description: 'Computer diagnostics and error scanning' },
